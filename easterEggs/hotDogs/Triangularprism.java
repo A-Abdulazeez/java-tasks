@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Triangularprism{
+public static void main(String[]args){
+Scanner input = new Scanner(System.in);
+
+System.out.println("What is the length");
+double length = input.nextDouble();
+
+double area = (Math.sqrt(3) /4) * (length * length);
+
+double volume = area * length;
+
+System.out.printf("The volume of the Equilateral triangle is %f%n", volume);
+
+}
+}
