@@ -10,10 +10,9 @@ scoreInput++;
 
 System.out.print("Enter Score: ");
 int scoreCollector = input.nextInt();
-sum += scoreCollector;
 
 }
-System.out.printf(sum);  
+
 }
 
 
