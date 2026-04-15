@@ -1,23 +1,56 @@
 import java.util.Scanner;
 
-public class Tasktwo{
+public class TaskOne{
 public static void main(String[]args){
 Scanner input = new Scanner(System.in);
 
 int scoreInput = 1;
+int sum = 0;
 while(scoreInput <=10){
 scoreInput++;
 
 System.out.print("Enter Score: ");
 int scoreCollector = input.nextInt();
 
-}
-
-   
-int avgerage = scoreInput / 10;
-
-System.out.printf("The sum is %d%n", sum); 
+ sum += scoreCollector;
 
 }
+System.out.println(sum);
 }
+
+
     
+    
+ 
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}   
+
+
+
+
+
+
