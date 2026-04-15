@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class TaskOne{
+public static void main(String[]args){
+Scanner input = new Scanner(System.in);
+
+for(int scoreInput = 0; scoreInput >=10; scoreInput++){
+int scoreInput = input.nextInt();
+System.out.print(ScoreInput);
+}
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}   
+}
+
+
+
+
+

@@ -4,6 +4,7 @@ public class Nokia3310StageOne{
 public static void main(String[] args) {
 Scanner input = new Scanner(System.in);
 
+
 System.out.print("""
                MENU
             1.  PhoneBook
