@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class TaskTwo{
+public class TaskSix{
 public static void main(String[]args){
 Scanner input = new Scanner(System.in);
 
@@ -14,11 +14,13 @@ scoreInput++;
 System.out.print("Enter Score: ");
 int scoreCollector = input.nextInt();
 
+if(scoreCollector % 2 == 0){
 sum += scoreCollector;
 count += 1;
 average = sum/count;
 }
-System.out.println("the sum is " + sum);
+}
+
 System.out.println("the average is " + average);
 }
 
