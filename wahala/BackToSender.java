@@ -1,9 +1,5 @@
-import java.util.Scanner;
-
 public class BackToSender{
 public static int CalculatePayment(int numberOfSales){
-Scanner input = new Scanner(System.in);
-
 
 int TotalNumberOfSales = 100;
 int riderPayment = 0;
@@ -12,11 +8,11 @@ if (numberOfSales < 50){
 riderPayment =  numberOfSales * 160 + 5000;
 }
 
-else if (numberOfSales == 50 && numberOfSales <= 59){
+else if (numberOfSales >= 50 && numberOfSales <= 59){
 riderPayment =  numberOfSales * 200 + 5000;
 }
 
-else if (numberOfSales == 60 && numberOfSales <= 69){
+else if (numberOfSales >= 60 && numberOfSales <= 69){
 riderPayment =  numberOfSales * 250 + 5000;
 }
 
