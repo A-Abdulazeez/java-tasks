@@ -12,9 +12,11 @@ public class SortedNumbers {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter three numbers: ");
+        System.out.print("Enter first numbers: ");
         double num1 = input.nextDouble();
+        System.out.print("Enter second numbers: ");
         double num2 = input.nextDouble();
+        System.out.print("Enter third numbers: ");
         double num3 = input.nextDouble();
 
         System.out.print("Numbers in decreasing order: ");
