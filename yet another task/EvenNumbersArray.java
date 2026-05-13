@@ -14,7 +14,7 @@ array[count] = userInput;
 System.out.print("Even numbers: ");
 for (int index = 0; index < array.length; index++) {
 if (array[index] % 2 == 0) {
-System.out.print(array[i] + " ");
+System.out.print(array[index] + " ");
   }
 }
 System.out.println();
