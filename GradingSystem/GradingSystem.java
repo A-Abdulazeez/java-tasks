@@ -137,50 +137,61 @@ int mostFails = -1;
 int mostPasses = -1;
 
 
-int overallHighScore = scores[0][0], overallLowScore = scores[0][0];
-int overallHighStudent = 1, overallHighSubject = 1;
-int overallLowStudent = 1, overallLowSubject = 1;
+int overallHighScore = scores[0][0];
+int overallLowScore = scores[0][0];
+int overallHighStudent = 1; 
+int overallHighSubject = 1;
+int overallLowStudent = 1; 
+int overallLowSubject = 1;
 
 
-int bestTotal = totalScores[0], worstTotal = totalScores[0];
+int bestTotal = totalScores[0];
+int worstTotal = totalScores[0];
 int bestStudent = 1;
 int worstStudent = 1;
 
 int classTotal = 0;
 
-for (int colum = 0; colum < numberOfSubject; colum++) {
-int passes = 0, fails = 0;
+for (int column = 0; column < numberOfSubject; column++) {
+int passes = 0;
+int fails = 0;
 for (int row = 0; row < numberOfStudent; row++) {
-int score = scores[row][colum];
-if (score >= 50) passes++; else fails++;
-
+int score = scores[row][column];
+if (score >= 50) passes++; 
+else {
+fails++;
+}
 
 if (score > overallHighScore) {
 overallHighScore = score;
 overallHighStudent = row + 1;
-overallHighSubject = colum + 1;
+overallHighSubject = column + 1;
 }
 if (score < overallLowScore) {
 overallLowScore = score;
 overallLowStudent = row + 1;
-overallLowSubject = colum + 1;
+overallLowSubject = column + 1;
 }
 }
 if (fails > mostFails) { 
-mostFails = fails; hardestSubject = colum + 1; 
+mostFails = fails; 
+hardestSubject = column + 1; 
 }
 if (passes > mostPasses) { 
-mostPasses = passes; easiestSubject = colum + 1; 
+mostPasses = passes; 
+easiestSubject = column + 1; 
 }
 }
 
 for (int indices = 0; indices < numberOfStudent; indices++) {
 classTotal += totalScores[indices];
 if (totalScores[indices] > bestTotal) { 
-bestTotal = totalScores[indices]; bestStudent = indices + 1; 
+bestTotal = totalScores[indices]; 
+bestStudent = indices + 1; 
 }
 if (totalScores[indices] < worstTotal) { 
-worstTotal = totalScores[indices]; worstStudent = indices + 1; 
+worstTotal = totalScores[indices]; 
+worstStudent = indices + 1; 
 }
 }
 
