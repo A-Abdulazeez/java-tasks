@@ -28,7 +28,7 @@ public class MonthGenerator {
 
 	public static int quarterOf(int month) {
 		if (month < 1 || month > 12) {
-        	    return ;
+        	    return 0;
         	}
     	return (month  - 1 )/ 3 + 1;
     }
